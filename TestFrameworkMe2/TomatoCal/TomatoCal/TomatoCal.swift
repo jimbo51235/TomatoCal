@@ -18,7 +18,6 @@ public class TomatoCal: NSObject {
 	public var startYear: Int = 2021
 	public var startMonth: Int = 10
 	public var cellSize: Int = 40
-	public var weekStart: Int = 0
 	public var normalColor = UIColor.black
 	public var highlightColor = UIColor.lightGray
 	
@@ -799,8 +798,4 @@ public class TomatoCal: NSObject {
 				return nil
 	}
 }
-
-/*
-weekStart: 0 (sun) 1 (mon)
-*/
 
