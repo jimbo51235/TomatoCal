@@ -53,7 +53,7 @@ class ViewController: UIViewController, TomatoCalDelegate {
 		tomatoCalendar.hasCurrentDate = true
 		tomatoCalendar.startYear = 2021
 		tomatoCalendar.startMonth = 8
-		tomatoCalendar.cellSize = 40
+		tomatoCalendar.cellSize = cellSize
 		tomatoCalendar.normalColor = .black
 		tomatoCalendar.highlightColor = .lightGray
 		tomatoCalendar.buttonCornerRadius = 4.0
