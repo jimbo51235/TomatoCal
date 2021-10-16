@@ -2,7 +2,7 @@
 
 ![](Screenshots/Screenshot_001.jpg)
 
-TomatoCal is a customizable framework used for iOS devices.  Each cell is a button that the user can tap.  And the framework will return the year, the month, day of the month, day of the week of the selected date all as numbers (Int).  You can change the cell size (Int) between 24 and 60 (inclusive) such that you can create a calendar adjusted for each device size.
+TomatoCal is a customizable framework (those Previous and Next buttons in the screenshot above not included) used for iOS devices.  Each cell is a button that the user can tap.  And the framework will return the year, the month, day of the month, day of the week of the selected date all as numbers (Int).  You can change the cell size (Int) between 24 and 60 (inclusive) such that you can create a calendar adjusted for each device size.
 
 In order to use this framework, download the sample project.  You will find the folder titled 'TomatoCal.'  Locate the Xcode file inside.  And put this Xcode file in your Xcode project.  Select your target and make sure you have 'TomatoCal.framework' under General > Framworks, Libraries, and Embeded Content as shown below.
 
