@@ -2,6 +2,8 @@
 
 ![](Screenshots/Screenshot_001.jpg)
 
+<h2>Development and compatibility</h2>
+
 Development platform: iOS<br/>
 Language: Swift<br/>
 Compatibility: iOS 11 or greater<br/>
