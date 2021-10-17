@@ -1,4 +1,4 @@
-# TomatoCal
+# TomatoCal Framework
 
 ![](Screenshots/Screenshot_001.jpg)
 
