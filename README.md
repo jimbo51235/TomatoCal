@@ -2,9 +2,9 @@
 
 ![](Screenshots/Screenshot_001.jpg)
 
-Development platform: iOS
-Language: Swift
-Compatibility: iOS 11 or greater
+Development platform: iOS<br/>
+Language: Swift<br/>
+Compatibility: iOS 11 or greater<br/>
 
 TomatoCal (compatible with iOS 11 or greater, tested with an actual device running iOS 13.3.1, simulator running iOS 14.4) is a customizable Swift framework (those Previous and Next buttons in the screenshot above not included) used for iOS devices.  Each cell is a button that the user can tap.  And the framework will return the year, the month, day of the month, day of the week of the selected date all as numbers (Int).  You can change the cell size (Int) between 24 and 60 (inclusive) such that you can create a calendar adjusted for each device size.
 
