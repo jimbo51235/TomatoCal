@@ -46,7 +46,7 @@ tomatoCalendar.weeklyExceptions = [2]<br/>
 
 let exception0 = TomatoCalExceptionModel(year: 2021, month: 12, dayOfMonth: 25)<br/>
 let exception1 = TomatoCalExceptionModel(year: 2022, month: 1, dayOfMonth: 1)<br/>
-tomatoCalendar.dailyExceptionModels = [expt0, exception1]<br/>
+tomatoCalendar.dailyExceptionModels = [exception0, exception1]<br/>
 
 ![](Screenshots/Screenshot_003.jpg)
 
