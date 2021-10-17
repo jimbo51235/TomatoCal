@@ -39,14 +39,14 @@ Lastly, it's your job to keep track of the current year and month.  If necessary
 
 Imagine a situation where you are a hairdresser and want to let your customers make an appointment with a calendar, using TomatoCal.  You don't want to let them select any day of the week.  You take a day off every Monday.  That's a situation where **weekly exceptions** come into play.   First, you instantiate TomatoCal() like
 
-let tomatoCalendar = TomatoCal()
-tomatoCalendar.weeklyExceptions = [2]
+let tomatoCalendar = TomatoCal()<br/>
+tomatoCalendar.weeklyExceptions = [2]<br/>
 
 , where the weeklyExceptions property is an array of intergers between 1 and 7, inclusive.  1 is for Sunday, 2 for Monday, ..., 7 for Saturday.  Well, you don't really work on the Christmas day, do you?  How about the New Year's Day?  In these cases, you use daily exceptions.  Use **TomatoCalExceptionModel** to make exception cases like
 
-let exception0 = TomatoCalExceptionModel(year: 2021, month: 12, dayOfMonth: 25)
-let exception1 = TomatoCalExceptionModel(year: 2022, month: 1, dayOfMonth: 1)
-tomatoCalendar.dailyExceptionModels = [expt0, exception1]
+let exception0 = TomatoCalExceptionModel(year: 2021, month: 12, dayOfMonth: 25)<br/>
+let exception1 = TomatoCalExceptionModel(year: 2022, month: 1, dayOfMonth: 1)<br/>
+tomatoCalendar.dailyExceptionModels = [expt0, exception1]<br/>
 
 ![](Screenshots/Screenshot_003.jpg)
 
