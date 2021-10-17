@@ -50,4 +50,4 @@ tomatoCalendar.dailyExceptionModels = [exception0, exception1]<br/>
 
 ![](Screenshots/Screenshot_003.jpg)
 
-You can set separate button colors for weekly and daily exceptions.  Use the weeklyExceptionBackColor property for weekly exceptions, dailyExceptionBackColor for daily exceptions.  As you see in the screenshot above, all daily buttons for Monday have a different color.  So does the 25th of December.  The user will not be able to tap any of these exception days.
+You can set separate button colors for weekly and daily exceptions.  Use the weeklyExceptionBackColor property for weekly exceptions, dailyExceptionBackColor for daily exceptions.  As you see in the screenshot above, all daily buttons for Monday have a different color.  So does the 25th of December.  The user will not be able to tap any of these exception days.  If they can't tap any of those calendar day buttons, they won't be able to make an appointment.  Sounds good?
