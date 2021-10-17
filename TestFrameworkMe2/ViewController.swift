@@ -58,10 +58,10 @@ class ViewController: UIViewController, TomatoCalDelegate {
 		tomatoCalendar.highlightColor = .lightGray
 		tomatoCalendar.buttonCornerRadius = 6.0
 		tomatoCalendar.buttonBackColor = .white
-		tomatoCalendar.buttonBorderColor = .lightGray
+		tomatoCalendar.buttonBorderColor = .gray
 		tomatoCalendar.buttonBorderWidth = 0.5
 		tomatoCalendar.buttonShadowColor = .lightGray
-		tomatoCalendar.buttonShadowOpacity = 0.1
+		tomatoCalendar.buttonShadowOpacity = 0.0
 		tomatoCalendar.mondayFirst = false
 		tomatoCalendar.localDaysText = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
 		tomatoCalendar.weekBoxHasBorderColor = true
@@ -85,13 +85,13 @@ class ViewController: UIViewController, TomatoCalDelegate {
 		tomatoCalendar.friColor = .orange
 		tomatoCalendar.satColor = .blue
 		
-		let exception0 = TomatoCalExceptionModel(year: 2021, month: 11, dayOfMonth: 4)
-		let exception1 = TomatoCalExceptionModel(year: 2021, month: 11, dayOfMonth: 22)
+		let exception0 = TomatoCalExceptionModel(year: 2021, month: 12, dayOfMonth: 25)
+		let exception1 = TomatoCalExceptionModel(year: 2022, month: 1, dayOfMonth: 1)
 		tomatoCalendar.dailyExceptionModels = [exception0, exception1]
 		tomatoCalendar.exceptionTextColor = UIColor.white
-		tomatoCalendar.weeklyExceptionBackColor = UIColor(red: 196/255.0, green: 52/255.0, blue: 28/255.0, alpha: 1)
+		tomatoCalendar.weeklyExceptionBackColor = UIColor.red
 		tomatoCalendar.dailyExceptionBackColor = UIColor(red: 30/255.0, green: 80/255.0, blue: 206/255.0, alpha: 1)
-		tomatoCalendar.weeklyExceptions = [3]
+		tomatoCalendar.weeklyExceptions = [2]
 		
 		if let calView = tomatoCalendar.makeCalendar() {
 			view.addSubview(calView)

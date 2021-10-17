@@ -6,7 +6,20 @@ Development platform: iOS<br/>
 Language: Swift<br/>
 Compatibility: iOS 11 or greater<br/>
 
+<h2>Description</h2>
+
 TomatoCal (compatible with iOS 11 or greater, tested with an actual device running iOS 13.3.1, simulator running iOS 14.4) is a customizable Swift framework (those Previous and Next buttons in the screenshot above not included) used for iOS devices.  Each cell is a button that the user can tap.  And the framework will return the year, the month, day of the month, day of the week of the selected date all as numbers (Int).  You can change the cell size (Int) between 24 and 60 (inclusive) such that you can create a calendar adjusted for each device size.
+
+<h2>Features</h2>
+
+<ol>
+<li>Set a cell (calendar day button) size for a different device size.</li>
+<li>Have options of starting the week with Sunday or Monday.</li>
+<li>Set weekly exceptions.</li>
+<li>Set daily exceptions.</li>
+</ol> 
+
+<h2>Using TomatoCal</h2>
 
 In order to use this framework, download the sample project.  You will find the folder titled 'TomatoCal.'  Locate the Xcode file inside.  And put this Xcode file in your Xcode project.  Select your target and make sure you have 'TomatoCal.framework' under General > Framworks, Libraries, and Embeded Content as shown below.
 
@@ -19,3 +32,20 @@ This framework comes with two delegate methods.  One is getCalendarNumbers(myYea
 You have options of starting each week with Sunday or Monday.  The default option is the former.  If you want to start the calendar week with Monday, set mondayFirst to true.
 
 Lastly, it's your job to keep track of the current year and month.  If necessary, create two Int variables like currentYear and currentMonth in your view controller.  If you want to advance the calendar by one month, add 1 to currentMonth and then call TomatoCal's changeDaysOfMonth(myYear:, myMonth:) method.
+
+<h2>Weekly and daily exceptions</h2>
+
+Imagine a situation where you are a hairdresser and want to let your customers make an appointment with a calendar, using TomatoCal.  You don't want to let them select any day of the week.  You take a day off every Monday.  That's a situation where **weekly exceptions** come into play.   First, you instantiate TomatoCal() like
+
+let tomatoCalendar = TomatoCal()
+tomatoCalendar.weeklyExceptions = [2]
+
+, where the weeklyExceptions property is an array of intergers between 1 and 7, inclusive.  1 is for Sunday, 2 for Monday, ..., 7 for Saturday.  Well, you don't really work on the Christmas day, do you?  How about the New Year's Day?  In these cases, you use daily exceptions.  Use **TomatoCalExceptionModel** to make exception cases like
+
+let exception0 = TomatoCalExceptionModel(year: 2021, month: 12, dayOfMonth: 25)
+let exception1 = TomatoCalExceptionModel(year: 2022, month: 1, dayOfMonth: 1)
+tomatoCalendar.dailyExceptionModels = [expt0, exception1]
+
+![](Screenshots/Screenshot_003.jpg)
+
+You can set separate button colors for weekly and daily exceptions.  Use the weeklyExceptionBackColor property for weekly exceptions, dailyExceptionBackColor for daily exceptions.  As you see in the screenshot above, all daily buttons for Monday have a different color.  So does the 25th of December.  The user will not be able to tap any of these exception days.
