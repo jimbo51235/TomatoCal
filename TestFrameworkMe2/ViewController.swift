@@ -84,6 +84,7 @@ class ViewController: UIViewController, TomatoCalDelegate {
 		tomatoCalendar.thuColor = .purple
 		tomatoCalendar.friColor = .orange
 		tomatoCalendar.satColor = .blue
+		tomatoCalendar.tomatoCalDelegate = self
 		
 		let exception0 = TomatoCalExceptionModel(year: 2021, month: 12, dayOfMonth: 25)
 		let exception1 = TomatoCalExceptionModel(year: 2022, month: 1, dayOfMonth: 1)
